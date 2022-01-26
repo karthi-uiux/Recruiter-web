@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="./style/app.css" rel="stylesheet">
+    <title>Recruiter application</title>
+</head>
+
+<body>
+
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <a href="">
+                <img src="./images/logo.svg" />
+            </a>
+        </div>
+
+        <div class="profile">
+
+            <img
+                src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+            <h4>Karthi M</h4>
+            <span class="badge bg-primary">Profile Not Verified</span>
+        </div>
+
+
+        <ul class="nav flex-column">
+
+            <li class="nav-item">
+                <a class="nav-link" href="candidate-home.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <defs>
+                            <style>
+                                .fa-secondary {
+                                    opacity: .4
+                                }
+                            </style>
+                        </defs>
+                        <path
+                            d="M496 512H368a16 16 0 0 1-16-16V368a16 16 0 0 0-16-16h-96a16 16 0 0 0-16 16v128a16 16 0 0 1-16 16H80a16 16 0 0 1-16-16V311c1.78-1.21 3.85-1.89 5.47-3.35L288 115l218.74 192.9c1.54 1.38 3.56 2 5.26 3.2V496a16 16 0 0 1-16 16z"
+                            class="fa-secondary" />
+                        <path
+                            d="M527.92 283.88L298.6 81.61a16 16 0 0 0-21.17 0L48.11 283.89a16 16 0 0 1-22.59-1.21L4.1 258.89a16 16 0 0 1 1.21-22.59l256-226a39.85 39.85 0 0 1 53.45 0L416 99.67V48a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v136.43l58.69 51.83a16 16 0 0 1 1.22 22.59l-21.4 23.82a16 16 0 0 1-22.59 1.21z"
+                            class="fa-primary" />
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="jobs.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <defs>
+                            <style>
+                                .fa-secondary {
+                                    opacity: .4
+                                }
+                            </style>
+                        </defs>
+                        <path
+                            d="M320 288h192v144c0 25.6-22.4 48-48 48H48c-25.6 0-48-22.4-48-48V288h192v48a16 16 0 0 0 16 16h96a16 16 0 0 0 16-16z"
+                            class="fa-secondary" />
+                        <path
+                            d="M464 128h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128z"
+                            class="fa-primary" />
+                    </svg>
+                    Jobs
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <defs>
+                            <style>
+                                .fa-secondary {
+                                    opacity: .4
+                                }
+                            </style>
+                        </defs>
+                        <path
+                            d="M180 160h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12v-40a12 12 0 0 0-12-12zm0 96h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12v-40a12 12 0 0 0-12-12zm0-192h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12V76a12 12 0 0 0-12-12zm128 0h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12V76a12 12 0 0 0-12-12zm0 96h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12v-40a12 12 0 0 0-12-12zm0 96h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12v-40a12 12 0 0 0-12-12z"
+                            class="fa-secondary" />
+                        <path
+                            d="M436 480h-20V24a24 24 0 0 0-24-24H56a24 24 0 0 0-24 24v456H12a12 12 0 0 0-12 12v20h448v-20a12 12 0 0 0-12-12zM128 76a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12v40a12 12 0 0 1-12 12h-40a12 12 0 0 1-12-12zm0 96a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12v40a12 12 0 0 1-12 12h-40a12 12 0 0 1-12-12zm52 148h-40a12 12 0 0 1-12-12v-40a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12v40a12 12 0 0 1-12 12zm76 160h-64v-84a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12zm64-172a12 12 0 0 1-12 12h-40a12 12 0 0 1-12-12v-40a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12zm0-96a12 12 0 0 1-12 12h-40a12 12 0 0 1-12-12v-40a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12zm0-96a12 12 0 0 1-12 12h-40a12 12 0 0 1-12-12V76a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12z"
+                            class="fa-primary" />
+                    </svg>
+                    Companies
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <defs>
+                            <style>
+                                .fa-secondary {
+                                    opacity: .4
+                                }
+                            </style>
+                        </defs>
+                        <path
+                            d="M191.35 414.77L208 344l-32-56h96l-32 56 16.65 70.77L224 480zM224 256A128 128 0 1 0 96 128a128 128 0 0 0 128 128z"
+                            class="fa-secondary" />
+                        <path
+                            d="M319.8 288.6L224 480l-95.8-191.4C56.9 292 0 350.3 0 422.4V464a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48v-41.6c0-72.1-56.9-130.4-128.2-133.8z"
+                            class="fa-primary" />
+                    </svg>
+                    Profile
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <defs>
+                            <style>
+                                .fa-secondary {
+                                    opacity: .4
+                                }
+                            </style>
+                        </defs>
+                        <path
+                            d="M487.75 315.6l-42.6-24.6a192.62 192.62 0 0 0 0-70.2l42.6-24.6a12.11 12.11 0 0 0 5.5-14 249.2 249.2 0 0 0-54.7-94.6 12 12 0 0 0-14.8-2.3l-42.6 24.6a188.83 188.83 0 0 0-60.8-35.1V25.7A12 12 0 0 0 311 14a251.43 251.43 0 0 0-109.2 0 12 12 0 0 0-9.4 11.7v49.2a194.59 194.59 0 0 0-60.8 35.1L89.05 85.4a11.88 11.88 0 0 0-14.8 2.3 247.66 247.66 0 0 0-54.7 94.6 12 12 0 0 0 5.5 14l42.6 24.6a192.62 192.62 0 0 0 0 70.2l-42.6 24.6a12.08 12.08 0 0 0-5.5 14 249 249 0 0 0 54.7 94.6 12 12 0 0 0 14.8 2.3l42.6-24.6a188.54 188.54 0 0 0 60.8 35.1v49.2a12 12 0 0 0 9.4 11.7 251.43 251.43 0 0 0 109.2 0 12 12 0 0 0 9.4-11.7v-49.2a194.7 194.7 0 0 0 60.8-35.1l42.6 24.6a11.89 11.89 0 0 0 14.8-2.3 247.52 247.52 0 0 0 54.7-94.6 12.36 12.36 0 0 0-5.6-14.1zm-231.4 36.2a95.9 95.9 0 1 1 95.9-95.9 95.89 95.89 0 0 1-95.9 95.9z"
+                            class="fa-secondary" />
+                        <path d="M256.35 319.8a63.9 63.9 0 1 1 63.9-63.9 63.9 63.9 0 0 1-63.9 63.9z"
+                            class="fa-primary" />
+                    </svg>
+                    Settings
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="wrapper">
+
+        <!-- top Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
+            <div class="container-fluid">
+
+                <div class="nav-control">
+                    <div class="hamburger "><span class="line"></span><span class="line"></span><span
+                            class="line"></span></div>
+                </div>
+
+                <div class="top-navs">
+                    <div class="title">
+                        <h3>Jobs Details</h3>
+                    </div>
+                    <div class="activity">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
+                            </svg>
+                        </span>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- start Container -->
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="mb-0">Overview</h4>
+                        </div>
+                        <div class="card-body pt-4">
+                            <div class="cus-list">
+                                <h5>Job Title:</h5><span>April 30,2021</span>
+                            </div>
+                            <div class="cus-list">
+                                <h5>Experience:</h5><span>2yrs Exp</span>
+                            </div>
+                            <div class="cus-list">
+                                <h5>Vacancy:</h5><span>10</span>
+                            </div>
+                            <div class="cus-list">
+                                <h5>Job Type:</h5><span>Full-Type</span>
+                            </div>
+                            <div class="cus-list">
+                                <h5>Posted Date:</h5><span>13-6-2021</span>
+                            </div>
+                            <div class="cus-list">
+                                <h5>Last Apply Date:</h5><span>12-8-2021</span>
+                            </div>
+                            <div class="cus-list">
+                                <h5>Closed Date:</h5><span>12-8-2021</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between flex-wrap">
+                                <button class="btn btn-primary btn-sm" href="">Apply Now</button>
+                                <button class="btn btn-outline-primary btn-sm" href="">Contact Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-8">
+                    <div class="job-details">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="profile">
+                                        <div class="logo">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1200px-Microsoft_logo.svg.png"
+                                                alt="">
+                                        </div>
+
+                                        <div class="name">
+                                            <h4>UI/UX Developer</h4>
+                                            <span>Microsoft</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="location">
+                                    <div class="info">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path
+                                                d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" />
+                                        </svg>
+                                        <p>777 Brockton Avenue,
+                                            Abington MA 2351</p>
+                                    </div>
+                                </div>
+
+
+                                <hr />
+
+                                <div class="company-details">
+
+
+                                    <div class="row">
+
+                                        <div class="col-md-6">
+                                            <div class="small-text">
+                                                <p>Type of corporation</p>
+                                            </div>
+                                            <h5>B2B & B2C</h5>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="small-text">
+                                                <p>Company size</p>
+                                            </div>
+                                            <h5>11-50 employees</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="small-text">
+                                                <p>Soft Skill</p>
+                                            </div>
+                                            <ul>
+                                                <li>Slack</li>
+                                                <li>Basic English</li>
+                                                <li>Well Organized</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-8">
+                                            <div class="small-text">
+                                                <p>Technical Skill</p>
+                                            </div>
+                                            <span class="badge bg-primary">Editing</span>
+                                            <span class="badge bg-primary">Wire-framing</span>
+                                            <span class="badge bg-primary">XD</span>
+                                            <span class="badge bg-primary">Photoshop</span>
+                                            <span class="badge bg-primary">Sketch</span>
+                                            <span class="badge bg-primary">HTML</span>
+                                            <span class="badge bg-primary">SCSS</span>
+                                            <span class="badge bg-primary">Bootstrap</span>
+                                            <span class="badge bg-primary">Figma</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <hr />
+
+                                <div class="description">
+                                    <div class="info">
+                                        <h4>Job Description</h4>
+                                        <p>Gubagoo is a fast growing provider of messaging and commerce solutions for
+                                            automotive dealers
+                                            changing the future of how
+                                            people find, buy and service their vehicles.
+                                        </p>
+                                    </div>
+
+
+                                    <div class="info">
+                                        <h4>What you will be doing:</h4>
+                                        <ul>
+                                            <li>Contribute new controls or design improvements to our</li>
+                                            <li>Take ownership of the successful delivery of features</li>
+                                            <li>Help set and achieve quarterly goals</li>
+                                            <li>Ship a TON of product improvements and features</li>
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+
+                                <hr />
+
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <div class="cus-list">
+                                            <h5>Job Role:</h5><span>Designer</span>
+                                        </div>
+                                        <div class="cus-list">
+                                            <h5>Min Salary:</h5><span>$40,000</span>
+                                        </div>
+                                        <div class="cus-list">
+                                            <h5>Max Salary:</h5><span>$60,000</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="cus-list">
+                                            <h5>Job Experience:</h5><span>2yrs+</span>
+                                        </div>
+                                        <div class="cus-list">
+                                            <h5>Launges:</h5><span>Hindi, English</span>
+                                        </div>
+                                        <div class="cus-list">
+                                            <h5>Eligibility:</h5><span>B.tech ,Any Graduate</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col">
+                                        <button type="button" class="btn btn-primary d-block m-auto">Apply to this
+                                            job</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

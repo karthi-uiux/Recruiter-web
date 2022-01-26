@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="./style/app.css" rel="stylesheet">
+    <title>Recruiter application</title>
+</head>
+
+<body>
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <a href="">
+                <img src="./images/logo.svg" />
+            </a>
+        </div>
+    
+        <div class="profile">
+    
+            <img
+                src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+            <h4>Karthi M</h4>
+            <span class="badge bg-primary">Profile Not Verified</span>
+        </div>
+    
+    
+        <ul class="nav flex-column">
+    
+            <li class="nav-item">
+                <a class="nav-link" href="candidate-home.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <defs>
+                            <style>
+                                .fa-secondary {
+                                    opacity: .4
+                                }
+                            </style>
+                        </defs>
+                        <path
+                            d="M496 512H368a16 16 0 0 1-16-16V368a16 16 0 0 0-16-16h-96a16 16 0 0 0-16 16v128a16 16 0 0 1-16 16H80a16 16 0 0 1-16-16V311c1.78-1.21 3.85-1.89 5.47-3.35L288 115l218.74 192.9c1.54 1.38 3.56 2 5.26 3.2V496a16 16 0 0 1-16 16z"
+                            class="fa-secondary" />
+                        <path
+                            d="M527.92 283.88L298.6 81.61a16 16 0 0 0-21.17 0L48.11 283.89a16 16 0 0 1-22.59-1.21L4.1 258.89a16 16 0 0 1 1.21-22.59l256-226a39.85 39.85 0 0 1 53.45 0L416 99.67V48a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v136.43l58.69 51.83a16 16 0 0 1 1.22 22.59l-21.4 23.82a16 16 0 0 1-22.59 1.21z"
+                            class="fa-primary" />
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="jobs.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <defs>
+                            <style>
+                                .fa-secondary {
+                                    opacity: .4
+                                }
+                            </style>
+                        </defs>
+                        <path
+                            d="M320 288h192v144c0 25.6-22.4 48-48 48H48c-25.6 0-48-22.4-48-48V288h192v48a16 16 0 0 0 16 16h96a16 16 0 0 0 16-16z"
+                            class="fa-secondary" />
+                        <path
+                            d="M464 128h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128z"
+                            class="fa-primary" />
+                    </svg>
+                    Jobs
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <defs>
+                            <style>
+                                .fa-secondary {
+                                    opacity: .4
+                                }
+                            </style>
+                        </defs>
+                        <path
+                            d="M180 160h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12v-40a12 12 0 0 0-12-12zm0 96h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12v-40a12 12 0 0 0-12-12zm0-192h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12V76a12 12 0 0 0-12-12zm128 0h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12V76a12 12 0 0 0-12-12zm0 96h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12v-40a12 12 0 0 0-12-12zm0 96h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12v-40a12 12 0 0 0-12-12z"
+                            class="fa-secondary" />
+                        <path
+                            d="M436 480h-20V24a24 24 0 0 0-24-24H56a24 24 0 0 0-24 24v456H12a12 12 0 0 0-12 12v20h448v-20a12 12 0 0 0-12-12zM128 76a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12v40a12 12 0 0 1-12 12h-40a12 12 0 0 1-12-12zm0 96a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12v40a12 12 0 0 1-12 12h-40a12 12 0 0 1-12-12zm52 148h-40a12 12 0 0 1-12-12v-40a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12v40a12 12 0 0 1-12 12zm76 160h-64v-84a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12zm64-172a12 12 0 0 1-12 12h-40a12 12 0 0 1-12-12v-40a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12zm0-96a12 12 0 0 1-12 12h-40a12 12 0 0 1-12-12v-40a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12zm0-96a12 12 0 0 1-12 12h-40a12 12 0 0 1-12-12V76a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12z"
+                            class="fa-primary" />
+                    </svg>
+                    Companies
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link active" href="profile.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <defs>
+                            <style>
+                                .fa-secondary {
+                                    opacity: .4
+                                }
+                            </style>
+                        </defs>
+                        <path
+                            d="M191.35 414.77L208 344l-32-56h96l-32 56 16.65 70.77L224 480zM224 256A128 128 0 1 0 96 128a128 128 0 0 0 128 128z"
+                            class="fa-secondary" />
+                        <path
+                            d="M319.8 288.6L224 480l-95.8-191.4C56.9 292 0 350.3 0 422.4V464a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48v-41.6c0-72.1-56.9-130.4-128.2-133.8z"
+                            class="fa-primary" />
+                    </svg>
+                    Profile
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <defs>
+                            <style>
+                                .fa-secondary {
+                                    opacity: .4
+                                }
+                            </style>
+                        </defs>
+                        <path
+                            d="M487.75 315.6l-42.6-24.6a192.62 192.62 0 0 0 0-70.2l42.6-24.6a12.11 12.11 0 0 0 5.5-14 249.2 249.2 0 0 0-54.7-94.6 12 12 0 0 0-14.8-2.3l-42.6 24.6a188.83 188.83 0 0 0-60.8-35.1V25.7A12 12 0 0 0 311 14a251.43 251.43 0 0 0-109.2 0 12 12 0 0 0-9.4 11.7v49.2a194.59 194.59 0 0 0-60.8 35.1L89.05 85.4a11.88 11.88 0 0 0-14.8 2.3 247.66 247.66 0 0 0-54.7 94.6 12 12 0 0 0 5.5 14l42.6 24.6a192.62 192.62 0 0 0 0 70.2l-42.6 24.6a12.08 12.08 0 0 0-5.5 14 249 249 0 0 0 54.7 94.6 12 12 0 0 0 14.8 2.3l42.6-24.6a188.54 188.54 0 0 0 60.8 35.1v49.2a12 12 0 0 0 9.4 11.7 251.43 251.43 0 0 0 109.2 0 12 12 0 0 0 9.4-11.7v-49.2a194.7 194.7 0 0 0 60.8-35.1l42.6 24.6a11.89 11.89 0 0 0 14.8-2.3 247.52 247.52 0 0 0 54.7-94.6 12.36 12.36 0 0 0-5.6-14.1zm-231.4 36.2a95.9 95.9 0 1 1 95.9-95.9 95.89 95.89 0 0 1-95.9 95.9z"
+                            class="fa-secondary" />
+                        <path d="M256.35 319.8a63.9 63.9 0 1 1 63.9-63.9 63.9 63.9 0 0 1-63.9 63.9z" class="fa-primary" />
+                    </svg>
+                    Settings
+                </a>
+            </li>
+    
+        </ul>
+    
+    </div>
+    
+    <div class="wrapper">
+    
+        <!-- top Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
+            <div class="container-fluid">
+    
+                <div class="nav-control">
+                    <div class="hamburger "><span class="line"></span><span class="line"></span><span class="line"></span>
+                    </div>
+                </div>
+    
+                <div class="top-navs">
+                    <div class="title">
+                        <h3>Profile</h3>
+                    </div>
+                    <div class="activity">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
+                            </svg>
+                        </span>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+<div class="container candiate-profile">
+
+<div class="row overview">
+
+<div class="col-md-4">
+    <div class="profile-pic">
+    <img src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+    </div>
+
+    <h4 class="text-center mt-3">Karthi Madesh</h4>
+    <p class="text-center">karthim.apple@gmail.com</p>
+
+<span class="badge bg-secondary role">UI/UX  Designer</span>
+
+
+</div>
+
+    <div class="col-md-8">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="all-count">
+               <div class="count">
+                   <div class="icon">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M38.4998 10.4995H35.0002V38.4999H38.4998C40.4245 38.4999 42 36.9238 42 34.9992V13.9992C42 12.075 40.4245 10.4995 38.4998 10.4995Z"
+                     ></path>
+                    <path
+                        d="M27.9998 10.4995V6.9998C27.9998 5.07515 26.4243 3.49963 24.5001 3.49963H17.4998C15.5757 3.49963 14.0001 5.07515 14.0001 6.9998V10.4995H10.5V38.4998H31.5V10.4995H27.9998ZM24.5001 10.4995H17.4998V6.99929H24.5001V10.4995Z"
+                       ></path>
+                    <path
+                        d="M3.50017 10.4995C1.57551 10.4995 0 12.075 0 13.9997V34.9997C0 36.9243 1.57551 38.5004 3.50017 38.5004H6.99983V10.4995H3.50017Z"
+                       ></path>
+                </svg>
+                </div>
+                   <h3>23</h3>
+                   <p>Application Sent</p>
+               </div>
+
+<div class="count">
+    <div class="icon">
+    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M33.25 8.75H31.5V5.25C31.5 4.78587 31.3156 4.34075 30.9874 4.01256C30.6593 3.68437 30.2141 3.5 29.75 3.5C29.2859 3.5 28.8407 3.68437 28.5126 4.01256C28.1844 4.34075 28 4.78587 28 5.25V8.75H14V5.25C14 4.78587 13.8156 4.34075 13.4874 4.01256C13.1592 3.68437 12.7141 3.5 12.25 3.5C11.7859 3.5 11.3408 3.68437 11.0126 4.01256C10.6844 4.34075 10.5 4.78587 10.5 5.25V8.75H8.75C7.35761 8.75 6.02226 9.30312 5.03769 10.2877C4.05312 11.2723 3.5 12.6076 3.5 14V15.75H38.5V14C38.5 12.6076 37.9469 11.2723 36.9623 10.2877C35.9777 9.30312 34.6424 8.75 33.25 8.75Z"
+          ></path>
+        <path
+            d="M3.5 33.25C3.5 34.6424 4.05312 35.9777 5.03769 36.9623C6.02226 37.9469 7.35761 38.5 8.75 38.5H33.25C34.6424 38.5 35.9777 37.9469 36.9623 36.9623C37.9469 35.9777 38.5 34.6424 38.5 33.25V19.25H3.5V33.25Z"
+          ></path>
+    </svg>
+    </div>
+    <h3>12</h3>
+    <p>Interviews Schedule</p>
+</div>
+
+
+
+<div class="count">
+    <div class="icon">
+<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M15.1812 22.0083C15.0651 21.9063 14.7969 21.6695 14.7015 21.5799C12.3755 19.3941 10.8517 15.9712 10.8517 12.1138C10.8517 5.37813 15.4869 0.0410156 21.0011 0.0410156C26.5152 0.0410156 31.1503 5.37813 31.1503 12.1138C31.1503 15.9679 29.6292 19.3884 27.3094 21.5778C27.2118 21.6699 26.9385 21.9116 26.8238 22.0125L26.8139 22.1799C26.8789 23.1847 27.5541 24.0553 28.5233 24.3626C35.7277 26.641 40.9507 32.0853 41.8277 38.538C41.9484 39.3988 41.6902 40.2696 41.1198 40.9254C40.5495 41.5813 39.723 41.9579 38.8541 41.9579C32.4956 41.9591 9.50675 41.9591 3.14821 41.9591C2.27873 41.9591 1.45183 41.5824 0.881272 40.9263C0.310711 40.2701 0.0524068 39.3989 0.172348 38.5437C1.05148 32.0851 6.27447 26.641 13.4778 24.3628C14.4504 24.0544 15.1263 23.1802 15.1885 22.1722L15.1812 22.0083Z"
+      ></path>
+</svg>
+    </div>
+    <h3>54</h3>
+    <p>Profile Viewed</p>
+</div>
+
+<div class="count">
+    <div class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path
+            d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zm-47.2 114.2l-184 184c-6.2 6.2-16.4 6.2-22.6 0l-104-104c-6.2-6.2-6.2-16.4 0-22.6l22.6-22.6c6.2-6.2 16.4-6.2 22.6 0l70.1 70.1 150.1-150.1c6.2-6.2 16.4-6.2 22.6 0l22.6 22.6c6.3 6.3 6.3 16.4 0 22.6z" />
+    </svg>
+    </div>
+    <h3>54</h3>
+    <p>Hired</p>
+</div>
+</div>
+<div class="profile-complete">
+        <h5>Profile completed</h5>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+            aria-valuemax="100">85%</div>
+    </div>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+
+   
+</div>
+
+<!-- tab start -->
+
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-1-tab" data-bs-toggle="tab" data-bs-target="#nav-1" type="button"
+            role="tab" aria-controls="nav-1" aria-selected="true">Overview</button>
+        <button class="nav-link" id="nav-2-tab" data-bs-toggle="tab" data-bs-target="#nav-2" type="button"
+            role="tab" aria-controls="nav-2" aria-selected="false">Assessment Details</button>
+        <button class="nav-link" id="nav-3-tab" data-bs-toggle="tab" data-bs-target="#nav-3" type="button"
+            role="tab" aria-controls="nav-3" aria-selected="false">Applications</button>
+            <button class="nav-link" id="nav-4-tab" data-bs-toggle="tab" data-bs-target="#nav-4" type="button" role="tab"
+                aria-controls="nav-4" aria-selected="false">Favourite Jobs</button>
+                <button class="nav-link" id="nav-5-tab" data-bs-toggle="tab" data-bs-target="#nav-5" type="button" role="tab"
+                    aria-controls="nav-5" aria-selected="false">Settings</button>
+    </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+    <!-- overview start -->
+    <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
+<div class="row">
+    <div class="col-md-6">
+
+        <!-- Personal Info -->
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="title-card">
+                    <div>
+                        <h5>Personal Information</h5>
+                    </div>
+                    <div class="btn-sec ms-auto">
+                        <button class="btn btn-primary btn-sm" type="button" id="button-addon2"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M493.26 56.26l-37.51-37.51C443.25 6.25 426.87 0 410.49 0s-32.76 6.25-45.25 18.74l-74.49 74.49L256 127.98 12.85 371.12.15 485.34C-1.45 499.72 9.88 512 23.95 512c.89 0 1.79-.05 2.69-.15l114.14-12.61L384.02 256l34.74-34.74 74.49-74.49c25-25 25-65.52.01-90.51zM118.75 453.39l-67.58 7.46 7.53-67.69 231.24-231.24 31.02-31.02 60.14 60.14-31.02 31.02-231.33 231.33zm340.56-340.57l-44.28 44.28-60.13-60.14 44.28-44.28c4.08-4.08 8.84-4.69 11.31-4.69s7.24.61 11.31 4.69l37.51 37.51c6.24 6.25 6.24 16.4 0 22.63z" />
+                            </svg>
+                            Edit
+                        </button>
+                    </div>
+                </div>
+                <div class="value">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="info">
+                                <span class="sub">First name</span>
+                                <p>Karthi</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info">
+                                <span class="sub">Last name</span>
+                                <p>Madesh</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info">
+                                <span class="sub">Email</span>
+                                <p>karthim.apple@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info">
+                                <span class="sub">Mobile number</span>
+                                <p>9876543210</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="info">
+                                <span class="sub">Address</span>
+                                <p>line one</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info">
+                                <span class="sub">District</span>
+                                <p>Salem</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info">
+                                <span class="sub">State</span>
+                                <p>Tamilnadu</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info">
+                                <span class="sub">Zipcode</span>
+                                <p>636502</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="value">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="info">
+                                <span class="sub">What do you do?</span>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="info">
+                                <span class="sub">Describe yourself</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has
+                                    been the industry's standard
+                                    dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                    scrambled
+                                    it to make a type specimen
+                                    book. It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially
+                                    unchanged.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="value">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="info">
+                                <span class="sub">What language do you speake?</span>
+                                <i>You not fill the information</i>
+                                <p></p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <!-- model form -->
+        <div class="offcanvas offcanvas-end profile-canvas" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Personal information</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputZip" class="form-label">What do you do?</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputZip" class="form-label">Discribe yourself</label>
+                        <textarea type="textarea" class="form-control" id="inputZip"></textarea>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="inputZip" class="form-label">What language do you speake?</label>
+
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary m-auto w-100 d-block">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+            <!-- Employment -->
+            <div class="card mb-4">
+                <div class="card-body">
+            
+                    <div class="title-card">
+                        <div>
+                            <h5>Employment details</h5>
+                            <p>sample text</p>
+                        </div>
+                        <div class="btn-sec ms-auto">
+                            <button class="btn btn-primary btn-sm" type="button" id="button-addon2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <path
+                                        d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z" />
+                                </svg>
+                                Add
+                            </button>
+            
+                        </div>
+                    </div>
+            
+                    <div class="row">
+                        <div class="col">
+                            <ul class="timeline">
+                                <li>
+                                    <h6>UI/UX developer</h6>
+            
+                                    <p>Jun-2021-Sep-2021</p>
+                                    <p>Company Name</p>
+                                    <p>Chennai</p>
+                                </li>
+                                <li>
+                                    <h6>UI/UX developer</h6>
+            
+                                    <p>Jun-2021-Sep-2021</p>
+                                    <p>Company Name</p>
+                                    <p>Chennai</p>
+                                </li>
+            
+            
+                            </ul>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+    </div>
+    <div class="col-md-6">
+        <!-- education -->
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="title-card">
+                    <div>
+                        <h5>Education</h5>
+                        <p>sample text</p>
+                    </div>
+                    <div class="btn-sec ms-auto">
+                        <button class="btn btn-primary btn-sm" type="button" id="button-addon2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z" />
+                            </svg>
+                            Add
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <div class="value">
+                    <div class="education-info">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M606.72 147.91l-258-79.57c-18.81-5.78-38.62-5.78-57.44 0l-258 79.57C13.38 154.05 0 171.77 0 192.02s13.38 37.97 33.28 44.11l22.64 6.98c-2.46 5.19-4.4 10.62-5.7 16.31C39.53 264.6 32 275.33 32 288.01c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.95 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.66c8.17-5.8 13.86-14.87 13.86-25.65 0-10.6-5.49-19.54-13.43-25.36 1.13-3.55 2.96-6.67 4.85-9.83l54.87 16.92L128 384c0 35.34 85.96 64 192 64s192-28.65 192-64l-14.28-114.26 109-33.62c19.91-6.14 33.28-23.86 33.28-44.11s-13.38-37.96-33.28-44.1zM462.44 374.47c-59.7 34.2-225.9 33.78-284.87 0l11.3-90.36 102.42 31.59c11.15 3.43 32.24 7.77 57.44 0l102.42-31.59 11.29 90.36zM334.59 269.82c-9.44 2.91-19.75 2.91-29.19 0L154.62 223.3l168.31-31.56c8.69-1.62 14.41-9.98 12.78-18.67-1.62-8.72-10.09-14.36-18.66-12.76l-203.78 38.2c-6.64 1.24-12.8 3.54-18.71 6.27L53.19 192l252.22-77.79c9.44-2.91 19.75-2.91 29.19 0l252.22 77.82-252.23 77.79z" />
+                            </svg>
+                        </div>
+                        <div class="right">
+                            <div class="top">
+                                <div class="name">
+                                    <h5>School SSLC</h5>
+                                </div>
+                                <div class="move-right">
+                                    <a href="" class="arrow-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path
+                                                d="M493.26 56.26l-37.51-37.51C443.25 6.25 426.87 0 410.49 0s-32.76 6.25-45.25 18.74l-74.49 74.49L256 127.98 12.85 371.12.15 485.34C-1.45 499.72 9.88 512 23.95 512c.89 0 1.79-.05 2.69-.15l114.14-12.61L384.02 256l34.74-34.74 74.49-74.49c25-25 25-65.52.01-90.51zM118.75 453.39l-67.58 7.46 7.53-67.69 231.24-231.24 31.02-31.02 60.14 60.14-31.02 31.02-231.33 231.33zm340.56-340.57l-44.28 44.28-60.13-60.14 44.28-44.28c4.08-4.08 8.84-4.69 11.31-4.69s7.24.61 11.31 4.69l37.51 37.51c6.24 6.25 6.24 16.4 0 22.63z" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="bottom">
+                                <div class="institute">
+                                    <span class="sub">University/Institute</span>
+                                    <p>National School</p>
+                                </div>
+                                <div class="time">
+                                    <span class="sub">Passing out year</span>
+                                    <p>2021</p>
+                                </div>
+                                <div class="type">
+                                    <span class="sub">Course type</span>
+                                    <span class="badge bg-primary">Full Time</span>
+                                </div>
+
+                                <div class="marks">
+                                    <span class="sub">Marks</span>
+                                    <p>76%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="value">
+                    <div class="education-info">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M606.72 147.91l-258-79.57c-18.81-5.78-38.62-5.78-57.44 0l-258 79.57C13.38 154.05 0 171.77 0 192.02s13.38 37.97 33.28 44.11l22.64 6.98c-2.46 5.19-4.4 10.62-5.7 16.31C39.53 264.6 32 275.33 32 288.01c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.95 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.66c8.17-5.8 13.86-14.87 13.86-25.65 0-10.6-5.49-19.54-13.43-25.36 1.13-3.55 2.96-6.67 4.85-9.83l54.87 16.92L128 384c0 35.34 85.96 64 192 64s192-28.65 192-64l-14.28-114.26 109-33.62c19.91-6.14 33.28-23.86 33.28-44.11s-13.38-37.96-33.28-44.1zM462.44 374.47c-59.7 34.2-225.9 33.78-284.87 0l11.3-90.36 102.42 31.59c11.15 3.43 32.24 7.77 57.44 0l102.42-31.59 11.29 90.36zM334.59 269.82c-9.44 2.91-19.75 2.91-29.19 0L154.62 223.3l168.31-31.56c8.69-1.62 14.41-9.98 12.78-18.67-1.62-8.72-10.09-14.36-18.66-12.76l-203.78 38.2c-6.64 1.24-12.8 3.54-18.71 6.27L53.19 192l252.22-77.79c9.44-2.91 19.75-2.91 29.19 0l252.22 77.82-252.23 77.79z" />
+                            </svg>
+                        </div>
+                        <div class="right">
+                            <div class="top">
+                                <div class="name">
+                                    <h5>Master</h5>
+                                </div>
+
+                                <div class="move-right">
+                                    <a href="" class="arrow-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path
+                                                d="M493.26 56.26l-37.51-37.51C443.25 6.25 426.87 0 410.49 0s-32.76 6.25-45.25 18.74l-74.49 74.49L256 127.98 12.85 371.12.15 485.34C-1.45 499.72 9.88 512 23.95 512c.89 0 1.79-.05 2.69-.15l114.14-12.61L384.02 256l34.74-34.74 74.49-74.49c25-25 25-65.52.01-90.51zM118.75 453.39l-67.58 7.46 7.53-67.69 231.24-231.24 31.02-31.02 60.14 60.14-31.02 31.02-231.33 231.33zm340.56-340.57l-44.28 44.28-60.13-60.14 44.28-44.28c4.08-4.08 8.84-4.69 11.31-4.69s7.24.61 11.31 4.69l37.51 37.51c6.24 6.25 6.24 16.4 0 22.63z" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="bottom">
+                                <div class="institute">
+                                    <span class="sub">University/Institute</span>
+                                    <p>National School</p>
+                                </div>
+                                <div class="time">
+                                    <span class="sub">Passing out year</span>
+                                    <p>2021</p>
+                                </div>
+                                <div class="type">
+                                    <span class="sub">Course type</span>
+                                    <span class="badge bg-primary">Full Time</span>
+                                </div>
+
+                                <div class="marks">
+                                    <span class="sub">Marks</span>
+                                    <p>76%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- category and skills -->
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="title-card">
+                    <div>
+                        <h5>Category and Skills</h5>
+                    </div>
+                    <div class="btn-sec ms-auto">
+                        <button class="btn btn-primary btn-sm" type="button" id="button-addon2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z" />
+                            </svg>
+                            Add
+                        </button>
+
+                    </div>
+                </div>
+
+<div class="no-data">
+    <img src="./images/no-data.svg" />
+    <p>You not fill the information</p>
+</div>
+
+            </div>
+        </div>
+
+
+        <!-- Resume -->
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="title-card">
+                    <div>
+                        <h5>Resume</h5>
+                    </div>
+                    <div class="btn-sec ms-auto">
+                        <button class="btn btn-primary btn-sm" type="button" id="button-addon2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z" />
+                            </svg>
+                            Upload
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Documents -->
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="title-card">
+                    <div>
+                        <h5>Documents</h5>
+                    </div>
+                    <div class="btn-sec ms-auto">
+                        <button class="btn btn-primary btn-sm" type="button" id="button-addon2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z" />
+                            </svg>
+                            Upload
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="col-md-6">
+    
+    </div>
+    <div class="col-md-6"></div>
+</div>
+
+    </div>
+    <!-- overview End -->
+    <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">...</div>
+    <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">...</div>
+    <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">...</div>
+    <div class="tab-pane fade" id="nav-5" role="tabpanel" aria-labelledby="nav-5-tab">...</div>
+
+
+</div>
+
+
+<!-- end tab -->
+
+
+
+
+
+
+
+
+
+
+</div>
+
+   
+</div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

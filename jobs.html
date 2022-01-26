@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="./style/app.css" rel="stylesheet">
+    <title>Recruiter application</title>
+</head>
+
+<body>
+
+   
+    <!-- sidebar -->
+    <div class="sidebar">
+<div class="logo">
+<a href="">
+    <img src="./images/logo.svg" />
+</a>
+</div>
+
+<div class="profile">
+
+<img src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+<h4>Karthi M</h4>
+<span class="badge bg-primary">Profile Not Verified</span>
+</div>
+
+
+<ul class="nav flex-column">
+   
+    <li class="nav-item">
+        <a class="nav-link" href="candidate-home.html">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+        <defs>
+            <style>
+                .fa-secondary {
+                    opacity: .4
+                }
+            </style>
+        </defs>
+        <path
+            d="M496 512H368a16 16 0 0 1-16-16V368a16 16 0 0 0-16-16h-96a16 16 0 0 0-16 16v128a16 16 0 0 1-16 16H80a16 16 0 0 1-16-16V311c1.78-1.21 3.85-1.89 5.47-3.35L288 115l218.74 192.9c1.54 1.38 3.56 2 5.26 3.2V496a16 16 0 0 1-16 16z"
+            class="fa-secondary" />
+        <path
+            d="M527.92 283.88L298.6 81.61a16 16 0 0 0-21.17 0L48.11 283.89a16 16 0 0 1-22.59-1.21L4.1 258.89a16 16 0 0 1 1.21-22.59l256-226a39.85 39.85 0 0 1 53.45 0L416 99.67V48a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v136.43l58.69 51.83a16 16 0 0 1 1.22 22.59l-21.4 23.82a16 16 0 0 1-22.59 1.21z"
+            class="fa-primary" />
+    </svg>
+        Home     
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="jobs.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <defs>
+                <style>
+                    .fa-secondary {
+                        opacity: .4
+                    }
+                </style>
+            </defs>
+            <path
+                d="M320 288h192v144c0 25.6-22.4 48-48 48H48c-25.6 0-48-22.4-48-48V288h192v48a16 16 0 0 0 16 16h96a16 16 0 0 0 16-16z"
+                class="fa-secondary" />
+            <path
+                d="M464 128h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128z"
+                class="fa-primary" />
+        </svg>
+            Jobs
+        </a>
+    </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <defs>
+                        <style>
+                            .fa-secondary {
+                                opacity: .4
+                            }
+                        </style>
+                    </defs>
+                    <path
+                        d="M180 160h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12v-40a12 12 0 0 0-12-12zm0 96h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12v-40a12 12 0 0 0-12-12zm0-192h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12V76a12 12 0 0 0-12-12zm128 0h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12V76a12 12 0 0 0-12-12zm0 96h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12v-40a12 12 0 0 0-12-12zm0 96h-40a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h40a12 12 0 0 0 12-12v-40a12 12 0 0 0-12-12z"
+                        class="fa-secondary" />
+                    <path
+                        d="M436 480h-20V24a24 24 0 0 0-24-24H56a24 24 0 0 0-24 24v456H12a12 12 0 0 0-12 12v20h448v-20a12 12 0 0 0-12-12zM128 76a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12v40a12 12 0 0 1-12 12h-40a12 12 0 0 1-12-12zm0 96a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12v40a12 12 0 0 1-12 12h-40a12 12 0 0 1-12-12zm52 148h-40a12 12 0 0 1-12-12v-40a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12v40a12 12 0 0 1-12 12zm76 160h-64v-84a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12zm64-172a12 12 0 0 1-12 12h-40a12 12 0 0 1-12-12v-40a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12zm0-96a12 12 0 0 1-12 12h-40a12 12 0 0 1-12-12v-40a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12zm0-96a12 12 0 0 1-12 12h-40a12 12 0 0 1-12-12V76a12 12 0 0 1 12-12h40a12 12 0 0 1 12 12z"
+                        class="fa-primary" />
+                </svg>
+                Companies
+            </a>
+        </li>
+
+    <li class="nav-item">
+    <a class="nav-link" href="profile.html">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <defs>
+            <style>
+                .fa-secondary {
+                    opacity: .4
+                }
+            </style>
+        </defs>
+        <path
+            d="M191.35 414.77L208 344l-32-56h96l-32 56 16.65 70.77L224 480zM224 256A128 128 0 1 0 96 128a128 128 0 0 0 128 128z"
+            class="fa-secondary" />
+        <path
+            d="M319.8 288.6L224 480l-95.8-191.4C56.9 292 0 350.3 0 422.4V464a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48v-41.6c0-72.1-56.9-130.4-128.2-133.8z"
+            class="fa-primary" />
+    </svg>
+        Profile
+    </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <defs>
+                <style>
+                    .fa-secondary {
+                        opacity: .4
+                    }
+                </style>
+            </defs>
+            <path
+                d="M487.75 315.6l-42.6-24.6a192.62 192.62 0 0 0 0-70.2l42.6-24.6a12.11 12.11 0 0 0 5.5-14 249.2 249.2 0 0 0-54.7-94.6 12 12 0 0 0-14.8-2.3l-42.6 24.6a188.83 188.83 0 0 0-60.8-35.1V25.7A12 12 0 0 0 311 14a251.43 251.43 0 0 0-109.2 0 12 12 0 0 0-9.4 11.7v49.2a194.59 194.59 0 0 0-60.8 35.1L89.05 85.4a11.88 11.88 0 0 0-14.8 2.3 247.66 247.66 0 0 0-54.7 94.6 12 12 0 0 0 5.5 14l42.6 24.6a192.62 192.62 0 0 0 0 70.2l-42.6 24.6a12.08 12.08 0 0 0-5.5 14 249 249 0 0 0 54.7 94.6 12 12 0 0 0 14.8 2.3l42.6-24.6a188.54 188.54 0 0 0 60.8 35.1v49.2a12 12 0 0 0 9.4 11.7 251.43 251.43 0 0 0 109.2 0 12 12 0 0 0 9.4-11.7v-49.2a194.7 194.7 0 0 0 60.8-35.1l42.6 24.6a11.89 11.89 0 0 0 14.8-2.3 247.52 247.52 0 0 0 54.7-94.6 12.36 12.36 0 0 0-5.6-14.1zm-231.4 36.2a95.9 95.9 0 1 1 95.9-95.9 95.89 95.89 0 0 1-95.9 95.9z"
+                class="fa-secondary" />
+            <path d="M256.35 319.8a63.9 63.9 0 1 1 63.9-63.9 63.9 63.9 0 0 1-63.9 63.9z" class="fa-primary" />
+        </svg>
+            Settings
+        </a>
+    </li>
+
+</ul>
+
+    </div>
+
+    <div class="wrapper">
+
+        <!-- top Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
+    <div class="container-fluid">
+
+<div class="nav-control">
+    <div class="hamburger "><span class="line"></span><span class="line"></span><span class="line"></span></div>
+</div>
+
+     <div class="top-navs">
+    <div class="title">
+        <h3>Jobs</h3>
+    </div>
+    <div class="activity">
+<span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path
+            d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
+    </svg>
+</span>
+<span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path
+            d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z" />
+    </svg>
+</span>
+    </div>
+    </div>
+    </div>
+</nav>
+
+
+<!-- start Container -->
+
+<div class="container home-featured-job">
+
+
+    <div class="row">
+        <div class="col-md-4">
+
+            <div class="company-profile">
+                <div class="top">
+                    <div class="logo">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1200px-Microsoft_logo.svg.png" />
+                    </div>
+                    <div class="name">
+                        <h5>Microsoft</h5>
+                        <span>3 days ago</span>
+                    </div>
+                </div>
+                <h4>UI/UX Developer</h4>
+                <div class="center">
+                    <div class="type">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M464 128h-80V80c0-26.51-21.49-48-48-48H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v256c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zM176 80h160v48H176V80zM54 176h404c3.31 0 6 2.69 6 6v74H48v-74c0-3.31 2.69-6 6-6zm404 256H54c-3.31 0-6-2.69-6-6V304h144v24c0 13.25 10.75 24 24 24h80c13.25 0 24-10.75 24-24v-24h144v122c0 3.31-2.69 6-6 6z" />
+                        </svg>
+                        <p>3-4 Yrs</p>
+                    </div>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M192 0C85.903 0 0 86.014 0 192c0 71.117 23.991 93.341 151.271 297.424 18.785 30.119 62.694 30.083 81.457 0C360.075 285.234 384 263.103 384 192 384 85.903 297.986 0 192 0zm0 464C64.576 259.686 48 246.788 48 192c0-79.529 64.471-144 144-144s144 64.471 144 144c0 54.553-15.166 65.425-144 272zm-80-272c0-44.183 35.817-80 80-80s80 35.817 80 80-35.817 80-80 80-80-35.817-80-80z" />
+                        </svg>
+                        <p>Chennai</p>
+                    </div>
+                </div>
+                <p>Visual Ideation & designing the web/ WAP sites, web pages & digital ad campaigns that are CREATIVE
+                    (out of box ideas) &
+                    INNOVATIVE, user-friendly, effective and appealing</p>
+
+                <div class="bottom">
+                    <div class="salary">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                                d="M308 80c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v31.659c0 6.627 5.373 12 12 12h93.61c39.065 0 67.203 17.4 79.458 48.341H12c-6.627 0-12 5.373-12 12v24c0 6.627 5.373 12 12 12h179.59c-3.43 49.738-35.677 80.341-86.615 80.341H12c-6.627 0-12 5.373-12 12v34.974c0 3.495 1.524 6.816 4.173 9.096l182.094 156.685a11.996 11.996 0 0 0 7.827 2.904h61.326c11.13 0 16.263-13.837 7.827-21.096L101.818 320h13.31c79.002 0 136.718-54.257 140.65-136H308c6.627 0 12-5.373 12-12v-24c0-6.627-5.373-12-12-12h-56.354c-5.067-21.636-14.409-40.497-27.202-56H308z" />
+                        </svg>
+                        <p>3-7 LPA</p>
+
+                    </div>
+                    <div class="btn-sec">
+                        <a href="job-details.html" class="btn btn-primary">Apply now</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="company-profile">
+                <div class="top">
+                    <div class="logo">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1200px-Microsoft_logo.svg.png" />
+                    </div>
+                    <div class="name">
+                        <h5>Microsoft</h5>
+                        <span>3 days ago</span>
+                    </div>
+                </div>
+                <h4>UI/UX Developer</h4>
+                <div class="center">
+                    <div class="type">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M464 128h-80V80c0-26.51-21.49-48-48-48H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v256c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zM176 80h160v48H176V80zM54 176h404c3.31 0 6 2.69 6 6v74H48v-74c0-3.31 2.69-6 6-6zm404 256H54c-3.31 0-6-2.69-6-6V304h144v24c0 13.25 10.75 24 24 24h80c13.25 0 24-10.75 24-24v-24h144v122c0 3.31-2.69 6-6 6z" />
+                        </svg>
+                        <p>3-4 Yrs</p>
+                    </div>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M192 0C85.903 0 0 86.014 0 192c0 71.117 23.991 93.341 151.271 297.424 18.785 30.119 62.694 30.083 81.457 0C360.075 285.234 384 263.103 384 192 384 85.903 297.986 0 192 0zm0 464C64.576 259.686 48 246.788 48 192c0-79.529 64.471-144 144-144s144 64.471 144 144c0 54.553-15.166 65.425-144 272zm-80-272c0-44.183 35.817-80 80-80s80 35.817 80 80-35.817 80-80 80-80-35.817-80-80z" />
+                        </svg>
+                        <p>Chennai</p>
+                    </div>
+                </div>
+                <p>Visual Ideation & designing the web/ WAP sites, web pages & digital ad campaigns that are CREATIVE
+                    (out of
+                    box ideas) &
+                    INNOVATIVE, user-friendly, effective and appealing</p>
+
+                <div class="bottom">
+                    <div class="salary">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                                d="M308 80c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v31.659c0 6.627 5.373 12 12 12h93.61c39.065 0 67.203 17.4 79.458 48.341H12c-6.627 0-12 5.373-12 12v24c0 6.627 5.373 12 12 12h179.59c-3.43 49.738-35.677 80.341-86.615 80.341H12c-6.627 0-12 5.373-12 12v34.974c0 3.495 1.524 6.816 4.173 9.096l182.094 156.685a11.996 11.996 0 0 0 7.827 2.904h61.326c11.13 0 16.263-13.837 7.827-21.096L101.818 320h13.31c79.002 0 136.718-54.257 140.65-136H308c6.627 0 12-5.373 12-12v-24c0-6.627-5.373-12-12-12h-56.354c-5.067-21.636-14.409-40.497-27.202-56H308z" />
+                        </svg>
+                        <p>3-7 LPA</p>
+
+                    </div>
+                    <div class="btn-sec">
+                        <a href="job-details.html" class="btn btn-primary">Apply now</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="col-md-4">
+
+            <div class="company-profile">
+                <div class="top">
+                    <div class="logo">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1200px-Microsoft_logo.svg.png" />
+                    </div>
+                    <div class="name">
+                        <h5>Microsoft</h5>
+                        <span>3 days ago</span>
+                    </div>
+                </div>
+                <h4>UI/UX Developer</h4>
+                <div class="center">
+                    <div class="type">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M464 128h-80V80c0-26.51-21.49-48-48-48H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v256c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zM176 80h160v48H176V80zM54 176h404c3.31 0 6 2.69 6 6v74H48v-74c0-3.31 2.69-6 6-6zm404 256H54c-3.31 0-6-2.69-6-6V304h144v24c0 13.25 10.75 24 24 24h80c13.25 0 24-10.75 24-24v-24h144v122c0 3.31-2.69 6-6 6z" />
+                        </svg>
+                        <p>3-4 Yrs</p>
+                    </div>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M192 0C85.903 0 0 86.014 0 192c0 71.117 23.991 93.341 151.271 297.424 18.785 30.119 62.694 30.083 81.457 0C360.075 285.234 384 263.103 384 192 384 85.903 297.986 0 192 0zm0 464C64.576 259.686 48 246.788 48 192c0-79.529 64.471-144 144-144s144 64.471 144 144c0 54.553-15.166 65.425-144 272zm-80-272c0-44.183 35.817-80 80-80s80 35.817 80 80-35.817 80-80 80-80-35.817-80-80z" />
+                        </svg>
+                        <p>Chennai</p>
+                    </div>
+                </div>
+                <p>Visual Ideation & designing the web/ WAP sites, web pages & digital ad campaigns that are CREATIVE
+                    (out of
+                    box ideas) &
+                    INNOVATIVE, user-friendly, effective and appealing</p>
+
+                <div class="bottom">
+                    <div class="salary">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                                d="M308 80c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v31.659c0 6.627 5.373 12 12 12h93.61c39.065 0 67.203 17.4 79.458 48.341H12c-6.627 0-12 5.373-12 12v24c0 6.627 5.373 12 12 12h179.59c-3.43 49.738-35.677 80.341-86.615 80.341H12c-6.627 0-12 5.373-12 12v34.974c0 3.495 1.524 6.816 4.173 9.096l182.094 156.685a11.996 11.996 0 0 0 7.827 2.904h61.326c11.13 0 16.263-13.837 7.827-21.096L101.818 320h13.31c79.002 0 136.718-54.257 140.65-136H308c6.627 0 12-5.373 12-12v-24c0-6.627-5.373-12-12-12h-56.354c-5.067-21.636-14.409-40.497-27.202-56H308z" />
+                        </svg>
+                        <p>3-7 LPA</p>
+
+                    </div>
+                    <div class="btn-sec">
+                        <a href="job-details.html" class="btn btn-primary">Apply now</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="col-md-4">
+
+            <div class="company-profile">
+                <div class="top">
+                    <div class="logo">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1200px-Microsoft_logo.svg.png" />
+                    </div>
+                    <div class="name">
+                        <h5>Microsoft</h5>
+                        <span>3 days ago</span>
+                    </div>
+                </div>
+                <h4>UI/UX Developer</h4>
+                <div class="center">
+                    <div class="type">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M464 128h-80V80c0-26.51-21.49-48-48-48H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v256c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zM176 80h160v48H176V80zM54 176h404c3.31 0 6 2.69 6 6v74H48v-74c0-3.31 2.69-6 6-6zm404 256H54c-3.31 0-6-2.69-6-6V304h144v24c0 13.25 10.75 24 24 24h80c13.25 0 24-10.75 24-24v-24h144v122c0 3.31-2.69 6-6 6z" />
+                        </svg>
+                        <p>3-4 Yrs</p>
+                    </div>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M192 0C85.903 0 0 86.014 0 192c0 71.117 23.991 93.341 151.271 297.424 18.785 30.119 62.694 30.083 81.457 0C360.075 285.234 384 263.103 384 192 384 85.903 297.986 0 192 0zm0 464C64.576 259.686 48 246.788 48 192c0-79.529 64.471-144 144-144s144 64.471 144 144c0 54.553-15.166 65.425-144 272zm-80-272c0-44.183 35.817-80 80-80s80 35.817 80 80-35.817 80-80 80-80-35.817-80-80z" />
+                        </svg>
+                        <p>Chennai</p>
+                    </div>
+                </div>
+                <p>Visual Ideation & designing the web/ WAP sites, web pages & digital ad campaigns that are CREATIVE
+                    (out of
+                    box ideas) &
+                    INNOVATIVE, user-friendly, effective and appealing</p>
+
+                <div class="bottom">
+                    <div class="salary">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                                d="M308 80c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v31.659c0 6.627 5.373 12 12 12h93.61c39.065 0 67.203 17.4 79.458 48.341H12c-6.627 0-12 5.373-12 12v24c0 6.627 5.373 12 12 12h179.59c-3.43 49.738-35.677 80.341-86.615 80.341H12c-6.627 0-12 5.373-12 12v34.974c0 3.495 1.524 6.816 4.173 9.096l182.094 156.685a11.996 11.996 0 0 0 7.827 2.904h61.326c11.13 0 16.263-13.837 7.827-21.096L101.818 320h13.31c79.002 0 136.718-54.257 140.65-136H308c6.627 0 12-5.373 12-12v-24c0-6.627-5.373-12-12-12h-56.354c-5.067-21.636-14.409-40.497-27.202-56H308z" />
+                        </svg>
+                        <p>3-7 LPA</p>
+
+                    </div>
+                    <div class="btn-sec">
+                        <a href="job-details.html" class="btn btn-primary">Apply now</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="company-profile">
+                <div class="top">
+                    <div class="logo">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1200px-Microsoft_logo.svg.png" />
+                    </div>
+                    <div class="name">
+                        <h5>Microsoft</h5>
+                        <span>3 days ago</span>
+                    </div>
+                </div>
+                <h4>UI/UX Developer</h4>
+                <div class="center">
+                    <div class="type">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M464 128h-80V80c0-26.51-21.49-48-48-48H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v256c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zM176 80h160v48H176V80zM54 176h404c3.31 0 6 2.69 6 6v74H48v-74c0-3.31 2.69-6 6-6zm404 256H54c-3.31 0-6-2.69-6-6V304h144v24c0 13.25 10.75 24 24 24h80c13.25 0 24-10.75 24-24v-24h144v122c0 3.31-2.69 6-6 6z" />
+                        </svg>
+                        <p>3-4 Yrs</p>
+                    </div>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M192 0C85.903 0 0 86.014 0 192c0 71.117 23.991 93.341 151.271 297.424 18.785 30.119 62.694 30.083 81.457 0C360.075 285.234 384 263.103 384 192 384 85.903 297.986 0 192 0zm0 464C64.576 259.686 48 246.788 48 192c0-79.529 64.471-144 144-144s144 64.471 144 144c0 54.553-15.166 65.425-144 272zm-80-272c0-44.183 35.817-80 80-80s80 35.817 80 80-35.817 80-80 80-80-35.817-80-80z" />
+                        </svg>
+                        <p>Chennai</p>
+                    </div>
+                </div>
+                <p>Visual Ideation & designing the web/ WAP sites, web pages & digital ad campaigns that are CREATIVE
+                    (out of
+                    box ideas) &
+                    INNOVATIVE, user-friendly, effective and appealing</p>
+
+                <div class="bottom">
+                    <div class="salary">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                                d="M308 80c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v31.659c0 6.627 5.373 12 12 12h93.61c39.065 0 67.203 17.4 79.458 48.341H12c-6.627 0-12 5.373-12 12v24c0 6.627 5.373 12 12 12h179.59c-3.43 49.738-35.677 80.341-86.615 80.341H12c-6.627 0-12 5.373-12 12v34.974c0 3.495 1.524 6.816 4.173 9.096l182.094 156.685a11.996 11.996 0 0 0 7.827 2.904h61.326c11.13 0 16.263-13.837 7.827-21.096L101.818 320h13.31c79.002 0 136.718-54.257 140.65-136H308c6.627 0 12-5.373 12-12v-24c0-6.627-5.373-12-12-12h-56.354c-5.067-21.636-14.409-40.497-27.202-56H308z" />
+                        </svg>
+                        <p>3-7 LPA</p>
+
+                    </div>
+                    <div class="btn-sec">
+                        <a href="job-details.html" class="btn btn-primary">Apply now</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="company-profile">
+                <div class="top">
+                    <div class="logo">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1200px-Microsoft_logo.svg.png" />
+                    </div>
+                    <div class="name">
+                        <h5>Microsoft</h5>
+                        <span>3 days ago</span>
+                    </div>
+                </div>
+                <h4>UI/UX Developer</h4>
+                <div class="center">
+                    <div class="type">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M464 128h-80V80c0-26.51-21.49-48-48-48H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v256c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zM176 80h160v48H176V80zM54 176h404c3.31 0 6 2.69 6 6v74H48v-74c0-3.31 2.69-6 6-6zm404 256H54c-3.31 0-6-2.69-6-6V304h144v24c0 13.25 10.75 24 24 24h80c13.25 0 24-10.75 24-24v-24h144v122c0 3.31-2.69 6-6 6z" />
+                        </svg>
+                        <p>3-4 Yrs</p>
+                    </div>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M192 0C85.903 0 0 86.014 0 192c0 71.117 23.991 93.341 151.271 297.424 18.785 30.119 62.694 30.083 81.457 0C360.075 285.234 384 263.103 384 192 384 85.903 297.986 0 192 0zm0 464C64.576 259.686 48 246.788 48 192c0-79.529 64.471-144 144-144s144 64.471 144 144c0 54.553-15.166 65.425-144 272zm-80-272c0-44.183 35.817-80 80-80s80 35.817 80 80-35.817 80-80 80-80-35.817-80-80z" />
+                        </svg>
+                        <p>Chennai</p>
+                    </div>
+                </div>
+                <p>Visual Ideation & designing the web/ WAP sites, web pages & digital ad campaigns that are CREATIVE
+                    (out of
+                    box ideas) &
+                    INNOVATIVE, user-friendly, effective and appealing</p>
+
+                <div class="bottom">
+                    <div class="salary">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                                d="M308 80c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v31.659c0 6.627 5.373 12 12 12h93.61c39.065 0 67.203 17.4 79.458 48.341H12c-6.627 0-12 5.373-12 12v24c0 6.627 5.373 12 12 12h179.59c-3.43 49.738-35.677 80.341-86.615 80.341H12c-6.627 0-12 5.373-12 12v34.974c0 3.495 1.524 6.816 4.173 9.096l182.094 156.685a11.996 11.996 0 0 0 7.827 2.904h61.326c11.13 0 16.263-13.837 7.827-21.096L101.818 320h13.31c79.002 0 136.718-54.257 140.65-136H308c6.627 0 12-5.373 12-12v-24c0-6.627-5.373-12-12-12h-56.354c-5.067-21.636-14.409-40.497-27.202-56H308z" />
+                        </svg>
+                        <p>3-7 LPA</p>
+
+                    </div>
+                    <div class="btn-sec">
+                        <a href="job-details.html" class="btn btn-primary">Apply now</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+</div>
+
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
